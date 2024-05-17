@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vynaa Valerie</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden; /* Prevents scrolling */
+      background-color: black; /* Set background color to black */
+      color: white; /* Default text color to white */
+    }
+
+    .bio-link-container {
+      position: relative;
+      text-align: center;
+      padding: 20px 0;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .profile-image {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      margin-bottom: 10px;
+    }
+
+    .name {
+      font-size: 18px;
+      margin-top: 10px; 
+    }
+
+    .bio-link-container ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .bio-link-container ul li {
+      margin: 5px 0;
+      width: calc(100% - 40px);
+    }
+
+    .bio-link-container ul li a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      background-color: #3498db;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .dark-mode-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background-color: #555;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 2; /* Ensure button is above other elements */
+    }
+
+    .dark-mode {
+      background-color: black;
+      color: white;
+    }
+
+    .light-mode {
+      background-color: white;
+      color: black;
+    }
+
+    .light-mode .bio-link-container ul li a {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .light-mode .dark-mode-button {
+      background-color: #ddd;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+<button class="dark-mode-button" onclick="toggleDarkMode()">Dark Mode</button>
+
+<audio autoplay loop>
+  <source src="mp3/SoundPina.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<div class="bio-link-container">
+  <img src="https://telegra.ph/file/5b292f69baf72c8293c7d.jpg" alt="Profile Image" class="profile-image">
+  <p class="name">Hunter Tales</p>
+  <ul>
+    <li><a href="about.html">About me</a></li>
+    <li><a href="sewa.html">SewaBot</a></li>
+    <li><a href="https://linktr.ee/rikoelnando?utm_source=linktree_profile_share&ltsid=1e4532ba-50a0-431d-af48-120697237161">Contact</a></li>
+    <li><a href="https://www.instagram.com/riko_elnando?igsh=MTd6M2VrcmZkdzkwbg==">Instagram</a></li>
+    <li><a href="https://youtube.com/@viedrickoelnando2442?si=1JLXxfrykgDcB-XR">YouTube</a></li>
+    <li><a href="https://www.facebook.com/profile.php?id=100084108338432&mibextid=ZbWKwL">Facebook</a></li>
+    <li><a href="https://www.tiktok.com/@viedrickoelnando">TikTok</a></li>
+    <li><a href="https://t.me/Rickoelnando">Telegram</a></li>
+    <li><a href="http://wa.me/6281377901056">Wa me</a></li>
+  </ul>
+</div>
+
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle('light-mode');
+  }
+</script>
+
+</body>
+</html>
