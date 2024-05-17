@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hunter Tales</title>
+  <title>Vynaa Valerie</title>
   <style>
     body, html {
       margin: 0;
       padding: 0;
       height: 100%;
       overflow: hidden; /* Prevents scrolling */
-      background-color: black; /* Set background color to black */
       color: white; /* Default text color to white */
     }
 
@@ -74,12 +73,10 @@
     }
 
     .dark-mode {
-      background-color: black;
       color: white;
     }
 
     .light-mode {
-      background-color: white;
       color: black;
     }
 
@@ -92,16 +89,28 @@
       background-color: #ddd;
       color: black;
     }
+
+    video#background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1;
+      background-size: cover;
+    }
   </style>
 </head>
 <body>
 
 <button class="dark-mode-button" onclick="toggleDarkMode()">Dark Mode</button>
 
-<audio autoplay loop>
-  <source src="mp3/SoundPina.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+<video autoplay muted loop id="background-video">
+  <source src="mp3/hutaoo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 <div class="bio-link-container">
   <img src="https://telegra.ph/file/5b292f69baf72c8293c7d.jpg" alt="Profile Image" class="profile-image">
