@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +9,15 @@
       margin: 0;
       padding: 0;
       height: 100%;
-      overflow: hidden; /* Prevents scrolling */
-      color: white; /* Default text color to white */
+      overflow: auto; /* Mengizinkan scrolling */
+      color: white; /* Warna teks default putih */
     }
 
     .bio-link-container {
-      position: relative;
       text-align: center;
       padding: 20px 0;
-      height: 100%;
       z-index: 1;
+      width: 100%;
     }
 
     .profile-image {
@@ -60,7 +59,7 @@
     }
 
     .dark-mode-button {
-      position: absolute;
+      position: fixed;
       top: 20px;
       right: 20px;
       padding: 10px 20px;
@@ -69,7 +68,7 @@
       border: none;
       border-radius: 5px;
       cursor: pointer;
-      z-index: 2; /* Ensure button is above other elements */
+      z-index: 2; /* Memastikan tombol di atas elemen lainnya */
     }
 
     .dark-mode {
@@ -105,26 +104,27 @@
 </head>
 <body>
 
-<button class="dark-mode-button" onclick="toggleDarkMode()">Dark Mode</button>
+<button class="dark-mode-button" onclick="toggleDarkMode()">Mode Gelap</button>
 
 <video autoplay muted loop id="background-video">
-  <source src="mp3/hutaoo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
+  <source src="https://telegra.ph/file/84dcdd53efc7576568fe4.mp4" type="video/mp4">
+  Browser Anda tidak mendukung tag video.
 </video>
 
 <div class="bio-link-container">
-  <img src="https://telegra.ph/file/5b292f69baf72c8293c7d.jpg" alt="Profile Image" class="profile-image">
+  <img src="https://telegra.ph/file/5b292f69baf72c8293c7d.jpg" alt="Foto Profil" class="profile-image">
   <p class="name">Hunter Tales</p>
   <ul>
-    <li><a href="about.html">About me</a></li>
+    <li><a href="about.html">Tentang Saya</a></li>
     <li><a href="sewa.html">SewaBot</a></li>
-    <li><a href="https://linktr.ee/rikoelnando?utm_source=linktree_profile_share&ltsid=1e4532ba-50a0-431d-af48-120697237161">Contact</a></li>
+    <li><a href="https://linktr.ee/rikoelnando?utm_source=linktree_profile_share&ltsid=1e4532ba-50a0-431d-af48-120697237161">Kontak</a></li>
     <li><a href="https://www.instagram.com/riko_elnando?igsh=MTd6M2VrcmZkdzkwbg==">Instagram</a></li>
     <li><a href="https://youtube.com/@viedrickoelnando2442?si=1JLXxfrykgDcB-XR">YouTube</a></li>
     <li><a href="https://www.facebook.com/profile.php?id=100084108338432&mibextid=ZbWKwL">Facebook</a></li>
     <li><a href="https://www.tiktok.com/@viedrickoelnando">TikTok</a></li>
     <li><a href="https://t.me/Rickoelnando">Telegram</a></li>
     <li><a href="http://wa.me/6281377901056">Wa me</a></li>
+    <li><a href="https://saweria.co/rikoelnando">Donasi</a></li>
   </ul>
 </div>
 
@@ -135,4 +135,5 @@
 </script>
 
 </body>
-</html>
+                                                                       </html>
+                                                                       
